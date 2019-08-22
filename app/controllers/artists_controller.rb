@@ -38,6 +38,10 @@ class ArtistsController < ApplicationController
   end
 
   private
+  
+  def artist_name=(name)
+    self.artist = Artist.find_or_create_by(name: name)
+  
   def set_artist
     @artist = artist.find(params[:id])
   end
