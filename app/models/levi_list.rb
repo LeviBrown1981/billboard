@@ -1,0 +1,2 @@
+class LeviList < ApplicationRecord
+end
